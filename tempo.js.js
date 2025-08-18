@@ -1,10 +1,10 @@
 const avancaSemana = document.getElementById("controleDias");
-let cont = 0;
+window.passagemSemana = 0;
 
 function proxSemana(){
-    cont++;
+    passagemSemana++;
 
-    document.getElementById("tempo").innerHTML = "Semana " + cont;
+    document.getElementById("tempo").innerHTML = "Semana " + window.passagemSemana;
 
 } 
 

@@ -28,43 +28,47 @@
 
     <button id = "prepararSolo">Arar</button>
     <button id = "limpar">Limpar</button>
-    <button id = "regar">regar</button>
+    <button id = "regar">Regar</button>
+    <button id="colherPlanta">Colher</button>
 
 
     <div class="loja">
-    <div class="botaoSemente" id="cenoura">
+        <div class="botaoSemente" id="cenoura">
         🥕 <span class="quantidade">(0)</span>
-        <button data-tipo="cenoura">Comprar $15</button>
-    </div>
+        <button id="comprarCenoura">Comprar $15</button>
+        <button id="plantarCenoura">Plantar</button>
+  </div>
 
-    <div class="botaoSemente" id="batata">
+  <div class="botaoSemente" id="batata">
         🥔 <span class="quantidade">(0)</span>
-        <button data-tipo="batata">Comprar $20</button>
+        <button id="comprarBatata">Comprar $20</button>
+        <button id="plantarBatata">Plantar</button>
+  </div>
+
+  <div class="botaoSemente" id="tomate">
+        🍅 <span class="quantidade">(1)</span>
+        <button id="comprarTomate">Comprar $10</button>
+        <button id="plantarTomate">Plantar</button>
+    </div>
     </div>
 
-    <div class="botaoSemente" id="tomate">
-        🍅 <span class="quantidade">(1)</span>
-        <button data-tipo="tomate">Comprar $10</button>
-    </div>
-    </div>
 
     <div class="estoque">
-    <div id="cenoura"> 🥕 (0)
-        <button>Vender por $25</button>
+        <div class="itemEstoque" id="estoqueCenoura">
+            🥕 <span class="quantidadeEstoque">(0)</span>
+            <button id="venderCenoura">Vender por $25</button>
+        </div>
+
+        <div class="itemEstoque" id="estoqueBatata">
+            🥔 <span class="quantidadeEstoque">(0)</span>
+            <button id="venderBatata">Vender por $35</button>
+        </div>
+
+        <div class="itemEstoque" id="estoqueTomate">
+            🍅 <span class="quantidadeEstoque">(1)</span>
+            <button id="venderTomate">Vender por $20</button>
+        </div>
     </div>
-
-    <div id="batata"> 🥔(0)
-        <button>Vender por $35</button>
-    </div>
-
-    <div id="tomate">🍅(1)
-        <button>Vender por $20</button>
-    </div>
-    </div>
-
-
-
-
 
 
 
