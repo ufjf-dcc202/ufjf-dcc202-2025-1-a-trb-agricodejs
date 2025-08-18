@@ -1,9 +1,13 @@
-let inchada = false;
-const preparouSolo = document.getElementById("prepararSolo");
+let quantCenoura = 0;
+let quantBatata = 0;
+let quantTomate = 0;
 
-function passouInchada(){
-    inchada = true;
+
+function aplicarSemente(event){
+    const selecionada = event.target;
+
 }
 
-preparouSolo.addEventListener('click', passouInchada);
-
+function plantar() {
+    
+}

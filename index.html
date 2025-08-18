@@ -4,6 +4,8 @@
     <link rel="stylesheet" href="style.css">
     <script src="canteiro.js" defer></script>
     <script src="controleDias.js" defer></script>
+    <script src="plantio.js" defer></script>
+
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,9 +19,54 @@
         <div class = "celula"></div>
     </div>
 
+    <div id = "saldo">Saldo 100</div>
+
+    <div id="tempo">
+    <span id="semana">Semana 0</span>
+        <button id="controleDias">Avançar dia</button>
+    </div>
+
+    <button id = "prepararSolo">Arar</button>
     <button id = "limpar">Limpar</button>
-    <button id = "controleDias">Avançar dia</button>
-    <button id = "prepararSolo">Inchada</button>
+    <button id = "regar">regar</button>
+
+
+    <div class="loja">
+    <div class="botaoSemente" id="cenoura">
+        🥕 <span class="quantidade">(0)</span>
+        <button data-tipo="cenoura">Comprar $15</button>
+    </div>
+
+    <div class="botaoSemente" id="batata">
+        🥔 <span class="quantidade">(0)</span>
+        <button data-tipo="batata">Comprar $20</button>
+    </div>
+
+    <div class="botaoSemente" id="tomate">
+        🍅 <span class="quantidade">(1)</span>
+        <button data-tipo="tomate">Comprar $10</button>
+    </div>
+    </div>
+
+    <div class="estoque">
+    <div id="cenoura"> 🥕 (0)
+        <button>Vender por $25</button>
+    </div>
+
+    <div id="batata"> 🥔(0)
+        <button>Vender por $35</button>
+    </div>
+
+    <div id="tomate">🍅(1)
+        <button>Vender por $20</button>
+    </div>
+    </div>
+
+
+
+
+
+
 
 
 </body>

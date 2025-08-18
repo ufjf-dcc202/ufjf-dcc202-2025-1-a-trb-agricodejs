@@ -1,8 +1,9 @@
 
 const canteiro = document.getElementById("canteiro");
 const limpar = document.getElementById("limpar");
+const preparouSolo = document.getElementById("prepararSolo");
 
-window.jaLimpou = false;
+let ferramenta = 'nenhuma';
 
 function criaCanteiro(){
 for(let cont = 0; cont < 12*12; cont++){
@@ -10,6 +11,8 @@ for(let cont = 0; cont < 12*12; cont++){
     const valor = parseInt(Math.random() * 3)
     const celula = document.createElement('div');
     celula.className = 'celula';
+
+    celula.addEventListener('click', aplicarFerramenta);
     
     if(valor === 1) celula.classList.add('pedra');
     else if(valor === 2) celula.classList.add('erva');
@@ -20,23 +23,48 @@ for(let cont = 0; cont < 12*12; cont++){
 
 criaCanteiro();
 
-function limparCanteiro() {
-
-    if(window.jaLimpou) {
-        alert("Você já limpou o canteiro!");
-        return;
+function aplicarFerramenta(event){
+    const selecionada = event.target;
+    if(ferramenta === 'limpar'){
+        limparCanteiro(selecionada);
     }
 
-    const celula = canteiro.querySelectorAll('.celula');
-
-    for(let cont = 0; cont < celula.length; cont++){
-        celula[cont].classList.remove('erva','pedra');
+    if(ferramenta === 'Arar') {
+        soloArado(selecionada);
     }
-
-    jaLimpou = true;
 }
 
-limpar.addEventListener('click',limparCanteiro);
+function limparCanteiro(celula) {
+
+    celula.classList.remove('erva','pedra');
+    
+}
+
+limpar.addEventListener('click', ()=> {
+    ferramenta = 'limpar';
+
+
+});
+
+function soloArado(celula){
+
+    if(celula.classList.contains('erva') || celula.classList.contains('pedra')){
+        alert("Antes de preparar o solo, você deve limpa-ló!")
+        return;
+    }
+        
+    celula.classList.add('solo-arado');
+}
+
+preparouSolo.addEventListener('click', () => {
+    ferramenta = 'Arar';
+});
+
+
+
+
+
+
 
 
 

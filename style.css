@@ -1,4 +1,4 @@
-#canteiro {
+#canteiro{
   display: grid;
   justify-content: center;
   justify-items: center;
@@ -9,7 +9,7 @@
   gap: 2px;
 }
 
-.celula {
+.celula{
   width: 50px;
   height: 50px;
   border: 1px solid #3d4232;
@@ -25,5 +25,8 @@
 
 .erva{
     background-image:  url('imagens/erva-daninha.png.png'), url(imagens/solo.png);
+}
 
+.solo-arado{
+  background-image: url('imagens/solo-arado.png');
 }

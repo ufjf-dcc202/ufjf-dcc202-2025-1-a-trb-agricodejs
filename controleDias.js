@@ -1,8 +1,11 @@
-window.dia = 0;
-const avancaDia = document.getElementById("controleDias");
+const avancaSemana = document.getElementById("controleDias");
+let cont = 0;
 
-function proxDia(){
-    window.dia++;
+function proxSemana(){
+    cont++;
+
+    document.getElementById("tempo").innerHTML = "Semana " + cont;
+
 } 
 
-avancaDia.addEventListener('click',proxDia);
+avancaSemana.addEventListener('click',proxSemana);
