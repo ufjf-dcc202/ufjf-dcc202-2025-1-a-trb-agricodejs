@@ -83,7 +83,7 @@ A interface é composta por:
 #### 🌾 O Ciclo da Fazenda: Passo a Passo
 
 **PASSO 1: Limpar o Terreno**
-* **Ação:** Selecione a ferramenta "Mão" ou simplesmente clique.
+* **Ação:** Selecione a ferramenta "limpar"
 * **Objetivo:** Clique sobre as pedras e ervas daninhas para removê-las.
 
 **PASSO 2: Arar a Terra**
@@ -99,12 +99,12 @@ A interface é composta por:
 * **Objetivo:** Clique em uma célula com uma semente plantada. É crucial regar todos os dias!
 
 **PASSO 5: Avançar o Tempo**
-* **Ação:** Clique no botão "Passar o Dia".
+* **Ação:** Clique no botão "Avançar dia".
 * **Efeito:** Plantas regadas avançam um estágio de crescimento; as não regadas morrem.
 
 **PASSO 6: Colher e Lucrar!**
 * **Ação:** Quando uma planta atingir seu estágio máximo, clique nela.
-* **Recompensa:** Você recebe dinheiro e a planta é removida.
+* **Recompensa:** Você recebe dinheiro se vende-lá e a planta é removida.
 
 ---
 
