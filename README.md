@@ -34,7 +34,7 @@ O objetivo do jogo é gerenciar um canteiro, limpando o terreno, preparando o so
 ### 🚀 Como Jogar
 
 #### 🔗 Acesso ao Jogo
-Jogue agora mesmo através do GitHub Pages: `https://<seu-usuario>.github.io/<nome-do-repositorio>/`
+Jogue agora mesmo através do GitHub Pages: `https://ufjf-dcc202.github.io/ufjf-dcc202-2025-1-a-trb-agricodejs/`
 
 #### 💻 Execução Local
 1.  Clone este repositório:
