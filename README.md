@@ -39,11 +39,11 @@ Jogue agora mesmo através do GitHub Pages: `https://ufjf-dcc202.github.io/ufjf-
 #### 💻 Execução Local
 1.  Clone este repositório:
     ```bash
-    git clone [https://github.com/](https://github.com/)<seu-usuario>/<nome-do-repositorio>.git
+    git clone [https://github.com/ufjf-dcc202/ufjf-dcc202-2025-1-a-trb-agricodejs.git]
     ```
 2.  Navegue até a pasta do projeto:
     ```bash
-    cd <nome-do-repositorio>
+    cd <ufjf-dcc202-2025-1-a-trb-agricodejs>
     ```
 3.  Abra o arquivo `index.html` em seu navegador de preferência.
 
