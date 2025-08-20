@@ -2,76 +2,85 @@
 <html lang="pt-br">
 <head>
     <link rel="stylesheet" href="style.css">
-    <script src="canteiro.js" defer></script>
-    <script src="controleDias.js" defer></script>
-    <script src="plantio.js" defer></script>
-
-
+    
+    <script src="saldo.js" defer></script> <!--Controla o saldo-->
+    <script src="plantio.js" defer></script> <!--Gerencia o plantio das sementes-->
+    <script src="canteiro.js" defer></script> <!--Controla as canteiros-->
+    <script src="tempo.js" defer></script> <!--Controla a passagem do tempo-->
+        
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AgriCode</title>
+    <title>AgriCode</title> <!--Define o título no navegador-->
 </head>
 <body>
+    <h1 id ="titulo"> 🐷 ICEDew Valley</h1> <!--Adiciona um título--> 
+
     <div id = "canteiro">
-        <div class = "celula"></div>
+	<!--define as casas ond e local onde o jogador pode plantar-->
+        <div class = "celula"></div> 
         <div class = "celula"></div>
         <div class = "celula"></div>
         <div class = "celula"></div>
     </div>
 
-    <div id = "saldo">Saldo 100</div>
+    <div id = "saldo">Saldo 100</div> <!--Saldo inicial de 100-->
 
-    <div id="tempo">
-    <span id="semana">Semana 0</span>
+    <div id="tempo"> <!--Controle do tempo, avançando os dias e controlando as semanas-->
+        <span id="semana">Semana 0</span>
         <button id="controleDias">Avançar dia</button>
     </div>
+      <!--Conjunto de botões que permitem arar, limpar, regar e colher-->
+    <div id = "botoes">
+        <button id = "prepararSolo">Arar</button>
+        <button id = "limpar">Limpar</button>
+        <button id = "regar">Regar</button>
+        <button id ="colherPlanta">Colher</button>
+        </div>
+	
+    <div class="loja"> <!--area da loja -->
 
-    <button id = "prepararSolo">Arar</button>
-    <button id = "limpar">Limpar</button>
-    <button id = "regar">Regar</button>
-    <button id="colherPlanta">Colher</button>
 
-
-    <div class="loja">
-        <div class="botaoSemente" id="cenoura">
-        🥕 <span class="quantidade">(0)</span>
-        <button id="comprarCenoura">Comprar $15</button>
+    <div class ="estoque"><!--Estoque de sementes disponíveis para plantio, e botão para plantar-->
+      <div class="botaoSemente" id="cenoura">
+        <span class="icone cenoura"></span>
+        <span class="quantidade">(0)</span>
         <button id="plantarCenoura">Plantar</button>
-  </div>
+      </div>
 
-  <div class="botaoSemente" id="batata">
-        🥔 <span class="quantidade">(0)</span>
-        <button id="comprarBatata">Comprar $20</button>
-        <button id="plantarBatata">Plantar</button>
-  </div>
-
-  <div class="botaoSemente" id="tomate">
-        🍅 <span class="quantidade">(1)</span>
-        <button id="comprarTomate">Comprar $10</button>
-        <button id="plantarTomate">Plantar</button>
-    </div>
+    <div class="botaoSemente" id="batata">
+      <span class="icone batata"></span>
+      <span class="quantidade">(0)</span>
+      <button id="plantarBatata">Plantar</button>
     </div>
 
+    <div class="botaoSemente" id="tomate">
+      <span class="icone tomate"></span>
+      <span class="quantidade">(1)</span>
+      <button id="plantarTomate">Plantar</button>
+    </div>
+        </div>
 
-    <div class="estoque">
+
+    <div class="estoque"> <!--Cada bloco representa os produtos que o jogador pode 
+                          comprar ou vender, mostrando o ícone e a quantidade no estoque--> 
         <div class="itemEstoque" id="estoqueCenoura">
             🥕 <span class="quantidadeEstoque">(0)</span>
-            <button id="venderCenoura">Vender por $25</button>
+            <button id="comprarCenoura">Comprar ($10)</button>
+            <button id="venderCenoura">Vender ($25)</button>
         </div>
 
         <div class="itemEstoque" id="estoqueBatata">
             🥔 <span class="quantidadeEstoque">(0)</span>
-            <button id="venderBatata">Vender por $35</button>
+            <button id="comprarBatata">Comprar ($20)</button>
+            <button id="venderBatata">Vender ($35)</button>
         </div>
 
         <div class="itemEstoque" id="estoqueTomate">
             🍅 <span class="quantidadeEstoque">(1)</span>
-            <button id="venderTomate">Vender por $20</button>
+            <button id="comprarTomate">Comprar ($10)</button>
+            <button id="venderTomate">Vender ($20)</button>
+
         </div>
     </div>
-
-
-
-
 </body>
 </html>
