@@ -113,11 +113,6 @@ A interface é composta por:
 * **Gerenciamento de Estado:** Refatorado para centralizar todo o estado em um único objeto (`gameState`), tornando o fluxo de dados mais claro e previsível.
 * **Simplificação da Lógica:** Substituído um grande bloco `switch` por uma abordagem mais modular, facilitando a manutenção e a adição de novas funcionalidades.
 
-### 📈 Controle de Versão (Git)
-* **Commits Atômicos:** Cada commit representa uma pequena e completa funcionalidade ou correção.
-* **Mensagens Claras:** As mensagens de commit seguem um padrão para facilitar o entendimento do histórico (ex: `feat:`, `fix:`, `refactor:`).
-* **Contribuições da Dupla:** O histórico de commits reflete o trabalho e a colaboração
-
 ### 📜 Créditos e Atribuições
 As imagens, ícones e recursos visuais utilizados neste projeto foram obtidos das seguintes fontes. Agradecemos a todos os criadores pelo seu incrível trabalho!
 
